@@ -1,7 +1,7 @@
 /**
  * Clase principal.
  * Versión 1.0
- * Autor: Profesor Entorno Desarrollo
+ * Autor: Daniel Garcia Martinez
  */
 public class Game {
 
@@ -12,12 +12,12 @@ public class Game {
 	}
 
 	private void welcome() {
-		System.out.println("Bienvenido a nuestro pequeño juego: Piedra Papel Tijeras :-D");
+		System.out.println("Bienvenido a nuestro peque\u00f1o juego: Piedra Papel Tijeras Lagarto Spock :-D");
 	}
 
 	private void printHelp() {
 		System.out.println("");
-		System.out.println("Ordenes y comandos válidos para el juego: ");
+		System.out.println("Ordenes y comandos v\u00e1lidos para el juego: ");
 		parser.showCommands();
 	}
 
@@ -45,7 +45,7 @@ public class Game {
 		Move pcMove;
 
 		if (move.isUnknown()) {
-			System.out.println("Opción No Válida");
+			System.out.println("Opci\u00f3n No V\u00e1lida");
 			printHelp();
 			return true;
 		}
@@ -75,7 +75,7 @@ public class Game {
 			continuing = processMove(move);
 			round++;
 		}
-		System.out.println("Adios!!");
+		System.out.println("Adi\u00f3s!!");
 	}
 
 	public static void main(String[] args) {
